@@ -5,7 +5,7 @@ import DataAreaContext from "../utils/DataAreaContext";
 const BodyEl = () => {
   const context = useContext(DataAreaContext);
 
-  function formatDate(date) {
+  function dobDate(date) {
     const dateArray = date.split("-");
     const year = dateArray[0];
     const month = dateArray[1];
@@ -42,7 +42,7 @@ const BodyEl = () => {
                   </a>
                 </td>
                 <td data-th="DOB" className="align-middle">
-                  {formatDate(dob.date)}
+                  {dobDate(dob.date)}
                 </td>
               </tr>
             );
@@ -56,3 +56,5 @@ const BodyEl = () => {
 };
 
 export default BodyEl;
+
+
