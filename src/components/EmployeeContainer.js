@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
-// import Table from "./Table";
+import Table from "./Table";
 import Nav from "./Nav";
-// import API from "../utils/API";
+import API from "../utils/API";
 import "../styles/EmployeeContainer.css";
-// import DataAreaContext from "../utils/DataAreaContext";
+import DataAreaContext from "../utils/DataAreaContext";
 
 const EmployeeContainer = () => {
   // const [developerState, setDeveloperState] = useState({
@@ -70,7 +70,8 @@ const EmployeeContainer = () => {
   // const handleSearchChange = (event) => {
   //   const filter = event.target.value;
   //   const filteredList = developerState.users.filter((item) => {
-  //     let values = item.name.first.toLowerCase() + " " + item.name.last.toLowerCase();
+  //     let values =
+  //       item.name.first.toLowerCase() + " " + item.name.last.toLowerCase();
   //     console.log(filter, values);
   //     if (values.indexOf(filter.toLowerCase()) !== -1) {
   //       return item;
@@ -95,9 +96,14 @@ const EmployeeContainer = () => {
 
   return (
     <>
-      {/* <DataAreaContext.Provider value={{ developerState, handleSearchChange, handleSort }}> */}
+      {/* <DataAreaContext.Provider
+        value={{ developerState, handleSearchChange, handleSort }}
+      > */}
       <Nav />
-      {/* <div className="data-area">{developerState.filteredUsers.length > 0 ? <Table /> : <div></div>}</div> */}
+      <div className="data-area">
+        hello
+        {/* {developerState.filteredUsers.length > 0 ? <Table /> : <div></div>} */}
+      </div>
       {/* </DataAreaContext.Provider> */}
     </>
   );
